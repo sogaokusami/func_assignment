@@ -1,5 +1,5 @@
 function calcCircumfrence(radius) {
-  let circumference = `The circumference is ${radius * 2 * 3.14159}`;
+  let circumference = `The circumference is ${radius * 2 * Math.PI}`;
   return circumference;
 }
 
