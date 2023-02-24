@@ -8,3 +8,13 @@ function isLeapYear(checkYear) {
   }
 }
 console.log(isLeapYear(2024));
+
+// q2
+function isSquareOrRectangle(length, breadth) {
+  if (length === breadth) {
+    return "This is a square⬜";
+  } else {
+    return "This is a rectangle🧧";
+  }
+}
+console.log(isSquareOrRectangle(10, 10));
