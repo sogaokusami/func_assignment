@@ -1,5 +1,5 @@
 // q1
-
+/*
 function isLeapYear(checkYear) {
   if (checkYear % 4 === 0) {
     return "True";
@@ -25,7 +25,18 @@ function discountCost(qty) {
   if (qty > 1000) {
     return `Your total cost is $${unitCost * qty * 0.9}`;
   } else {
-    return `Your total cost is ${unitCost * qty}`;
+    return `Your total cost is $${unitCost * qty}`;
   }
 }
 console.log(discountCost(900));
+*/
+
+// q4
+function profitableGamble(prob, prize, pay) {
+  if (prob * prize > pay) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(profitableGamble(0.9, 3, 2));
