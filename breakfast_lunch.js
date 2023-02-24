@@ -18,3 +18,14 @@ function isSquareOrRectangle(length, breadth) {
   }
 }
 console.log(isSquareOrRectangle(10, 10));
+
+// q3
+let unitCost = 100;
+function discountCost(qty) {
+  if (qty > 1000) {
+    return `Your total cost is $${unitCost * qty * 0.9}`;
+  } else {
+    return `Your total cost is ${unitCost * qty}`;
+  }
+}
+console.log(discountCost(900));
