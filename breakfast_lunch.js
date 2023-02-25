@@ -40,7 +40,7 @@ function profitableGamble(prob, prize, pay) {
   }
 }
 console.log(profitableGamble(0.9, 3, 2));
-*/
+
 
 // q5
 function makesTen(firstInt, secondInt) {
@@ -51,3 +51,15 @@ function makesTen(firstInt, secondInt) {
   }
 }
 console.log(makesTen(10, 10));
+*/
+
+// q6
+
+function comp(oneString, twoString) {
+  if (oneString.length === twoString.length) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(comp("fiery", "superb"));
