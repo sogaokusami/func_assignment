@@ -86,7 +86,7 @@ function oddOrEven(anyString) {
   }
 }
 console.log(oddOrEven("cherry"));
-*/
+
 // q9
 function isLastCharacterN(randomString) {
   if (randomString.charAt(randomString.length - 1) === "n") {
@@ -105,3 +105,17 @@ function isLastCharacterN(randomString) {
   }
 }
 console.log(isLastCharacterN("Learning JavaScript is golden"));
+
+
+// q10
+function isPlural(checkWord) {
+  if (checkWord.slice(-1) === "s") {
+    return "Check passed✔. This word is plural";
+  } else {
+    return "Check failed❌. Not a plural";
+  }
+}
+console.log(isPlural("magic"));
+*/
+
+// q11
