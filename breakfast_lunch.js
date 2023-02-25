@@ -116,7 +116,7 @@ function isPlural(checkWord) {
   }
 }
 console.log(isPlural("magic"));
-*/
+
 
 // q11
 function fifth(argOne, argTwo, argThree, argFour, argFive) {
@@ -127,3 +127,17 @@ function fifth(argOne, argTwo, argThree, argFour, argFive) {
   }
 }
 console.log(fifth());
+*/
+
+// q12
+function journeyDistance(journeyCost) {
+  let baseCost = 3;
+  if (journeyCost > baseCost) {
+    return `You have travelled a distance of ${
+      1 + (journeyCost - baseCost) / 2
+    }km`;
+  } else {
+    return `You have travelled ${journeyCost / 3}km`;
+  }
+}
+console.log(journeyDistance(5));
