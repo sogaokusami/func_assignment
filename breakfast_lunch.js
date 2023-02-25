@@ -51,7 +51,7 @@ function makesTen(firstInt, secondInt) {
   }
 }
 console.log(makesTen(10, 10));
-*/
+
 
 // q6
 
@@ -63,3 +63,15 @@ function comp(oneString, twoString) {
   }
 }
 console.log(comp("fiery", "superb"));
+*/
+
+// q7
+
+function acceptIntoMovie(age, isSupervised) {
+  if (age >= 15 || isSupervised === true) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(acceptIntoMovie(16, false));
