@@ -63,15 +63,26 @@ function comp(oneString, twoString) {
   }
 }
 console.log(comp("fiery", "superb"));
-*/
+
 
 // q7
 
 function acceptIntoMovie(age, isSupervised) {
   if (age >= 15 || isSupervised === true) {
+    return "true, enjoy your movie🎦";
+  } else {
+    return "false, you need to be accompanied by a guardian👩‍🦰👨‍🦰 or wait until you are older";
+  }
+}
+console.log(acceptIntoMovie(16, false));
+*/
+
+// q8
+function oddOrEven(anyString) {
+  if (anyString.length % 2 === 0) {
     return "true";
   } else {
     return "false";
   }
 }
-console.log(acceptIntoMovie(16, false));
+console.log(oddOrEven("cherry"));
