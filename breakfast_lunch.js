@@ -75,7 +75,7 @@ function acceptIntoMovie(age, isSupervised) {
   }
 }
 console.log(acceptIntoMovie(16, false));
-*/
+
 
 // q8
 function oddOrEven(anyString) {
@@ -86,3 +86,22 @@ function oddOrEven(anyString) {
   }
 }
 console.log(oddOrEven("cherry"));
+*/
+// q9
+function isLastCharacterN(randomString) {
+  if (randomString.charAt(randomString.length - 1) === "n") {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(isLastCharacterN("Learning JavaScript is golden"));
+
+function isLastCharacterN(randomString) {
+  if (randomString.slice(-1) === "n") {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(isLastCharacterN("Learning JavaScript is golden"));
