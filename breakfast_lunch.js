@@ -29,7 +29,7 @@ function discountCost(qty) {
   }
 }
 console.log(discountCost(900));
-*/
+
 
 // q4
 function profitableGamble(prob, prize, pay) {
@@ -40,3 +40,14 @@ function profitableGamble(prob, prize, pay) {
   }
 }
 console.log(profitableGamble(0.9, 3, 2));
+*/
+
+// q5
+function makesTen(firstInt, secondInt) {
+  if (firstInt + secondInt === 10 || firstInt === 10 || secondInt === 10) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(makesTen(10, 10));
