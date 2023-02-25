@@ -119,3 +119,11 @@ console.log(isPlural("magic"));
 */
 
 // q11
+function fifth(argOne, argTwo, argThree, argFour, argFive) {
+  if (arguments.length >= 5) {
+    return typeof argFive;
+  } else {
+    return "Not enough arguments";
+  }
+}
+console.log(fifth());
