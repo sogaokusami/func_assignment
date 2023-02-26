@@ -188,7 +188,7 @@ function flipMe(reverseMe) {
   console.log(xterCount, firstPosition, secondPosition);
 }
 console.log(flipMe("Hello World"));
-*/
+
 
 // q18
 function checkEnding(stringA, stringB) {
@@ -201,3 +201,13 @@ function checkEnding(stringA, stringB) {
   }
 }
 console.log(checkEnding("feminine", "nine"));
+*/
+
+// q19
+function getMiddle(middleString) {
+  let center = Math.floor(middleString.length / 2);
+  if (middleString.length % 2 === 1) {
+    return middleString.slice(center, center + 1);
+  }
+}
+console.log(getMiddle("testing"));
