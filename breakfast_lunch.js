@@ -127,7 +127,7 @@ function fifth(argOne, argTwo, argThree, argFour, argFive) {
   }
 }
 console.log(fifth());
-*/
+
 
 // q12
 function journeyDistance(journeyCost) {
@@ -141,3 +141,20 @@ function journeyDistance(journeyCost) {
   }
 }
 console.log(journeyDistance(5));
+
+
+// q13
+
+function days(isDay, isMonth) {
+  let result = getDate(isDay, isMonth);
+  return result;
+}
+console.log(days(2, 2018));
+*/
+
+// q14
+function newWord(inputWord) {
+  let result = inputWord.slice(1);
+  return result;
+}
+console.log(newWord("cherry"));
