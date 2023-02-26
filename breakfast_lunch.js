@@ -158,7 +158,7 @@ function newWord(inputWord) {
   return result;
 }
 console.log(newWord("cherry"));
-*/
+
 
 // q15
 function firstLast(slicedString) {
@@ -168,3 +168,11 @@ function firstLast(slicedString) {
   return result;
 }
 console.log(firstLast("Adeyemi"));
+*/
+
+// q16
+function wumbo(flipMode) {
+  let result = flipMode.replace(/M/gi, "W");
+  return result;
+}
+console.log(wumbo("WUMBOLOGY"));
