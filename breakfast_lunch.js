@@ -150,7 +150,7 @@ function days(isDay, isMonth) {
   return result;
 }
 console.log(days(2, 2018));
-*/
+
 
 // q14
 function newWord(inputWord) {
@@ -158,3 +158,13 @@ function newWord(inputWord) {
   return result;
 }
 console.log(newWord("cherry"));
+*/
+
+// q15
+function firstLast(slicedString) {
+  let sliceA = slicedString.slice(0, 1);
+  let sliceB = slicedString.slice(-1);
+  let result = `${sliceA}${sliceB}`;
+  return result;
+}
+console.log(firstLast("Adeyemi"));
