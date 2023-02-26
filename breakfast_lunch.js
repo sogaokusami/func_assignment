@@ -201,7 +201,7 @@ function checkEnding(stringA, stringB) {
   }
 }
 console.log(checkEnding("feminine", "nine"));
-*/
+
 
 // q19
 function getMiddle(middleString) {
@@ -211,3 +211,15 @@ function getMiddle(middleString) {
   }
 }
 console.log(getMiddle("testing"));
+*/
+
+// q21
+
+function moodToday(myMood) {
+  if (typeof myMood === "string") {
+    return `Today, I am feeling ${myMood}`;
+  } else if (typeof (myMood === "undefined")) {
+    return `Today, I am feeling neutral`;
+  }
+}
+console.log(moodToday("annoyed"));
