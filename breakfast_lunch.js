@@ -143,7 +143,7 @@ function journeyDistance(journeyCost) {
 console.log(journeyDistance(5));
 
 
-// q13
+// q13**
 
 function days(isDay, isMonth) {
   let result = getDate(isDay, isMonth);
@@ -168,7 +168,7 @@ function firstLast(slicedString) {
   return result;
 }
 console.log(firstLast("Adeyemi"));
-*/
+
 
 // q16
 function wumbo(flipMode) {
@@ -176,3 +176,28 @@ function wumbo(flipMode) {
   return result;
 }
 console.log(wumbo("WUMBOLOGY"));
+
+
+// q17**
+function flipMe(reverseMe) {
+  let xterCount = reverseMe.length;
+  let firstPosition = reverseMe.slice(xterCount - 1);
+  if (firstPosition - 1 > 0) {
+    let secondPosition = reverseMe.slice(xterCount - 2);
+  }
+  console.log(xterCount, firstPosition, secondPosition);
+}
+console.log(flipMe("Hello World"));
+*/
+
+// q18
+function checkEnding(stringA, stringB) {
+  let howLongA = stringA.length;
+  let howLongB = stringB.length;
+  if (stringA.slice(howLongA - howLongB) === stringB) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(checkEnding("feminine", "nine"));
