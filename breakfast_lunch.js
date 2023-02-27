@@ -234,7 +234,7 @@ function match(senseStringA, senseStringB) {
   }
 }
 console.log(match("mask", "mAskinG"));
-*/
+
 
 // q23
 function createID(firstName, lastName) {
@@ -245,3 +245,11 @@ function createID(firstName, lastName) {
   return result;
 }
 console.log(createID("mary", "smith"));
+*/
+
+// q24
+function google(wordsWithSpaces) {
+  let result = wordsWithSpaces.replace(/\s/g, "+");
+  return result;
+}
+console.log(google("Zulfah  "));
