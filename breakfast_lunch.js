@@ -211,7 +211,7 @@ function getMiddle(middleString) {
   }
 }
 console.log(getMiddle("testing"));
-*/
+
 
 // q21
 
@@ -223,3 +223,14 @@ function moodToday(myMood) {
   }
 }
 console.log(moodToday("annoyed"));
+*/
+
+// q22
+function match(senseStringA, senseStringB) {
+  if (senseStringA.toLowerCase() === senseStringB.toLowerCase()) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(match("mask", "mAskinG"));
