@@ -223,7 +223,7 @@ function moodToday(myMood) {
   }
 }
 console.log(moodToday("annoyed"));
-*/
+
 
 // q22
 function match(senseStringA, senseStringB) {
@@ -234,3 +234,14 @@ function match(senseStringA, senseStringB) {
   }
 }
 console.log(match("mask", "mAskinG"));
+*/
+
+// q23
+function createID(firstName, lastName) {
+  let partA = firstName.slice(0, 1).toLowerCase();
+  let partB = lastName.slice(0, 1).toUpperCase();
+  let partC = lastName.slice(1, 3).toLowerCase();
+  let result = `${partA}${partB}${partC}`;
+  return result;
+}
+console.log(createID("mary", "smith"));
