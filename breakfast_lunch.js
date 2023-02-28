@@ -293,3 +293,10 @@ function truncateString(chopString, noOfXters) {
 }
 console.log(truncateString("Ali Akerele", 2));
 */
+
+// q29
+function repeat_string(repeater, noOfTimes) {
+  let stringRepeats = `${repeater} `.repeat(noOfTimes);
+  return stringRepeats;
+}
+console.log(repeat_string("Vote wisely", 2));
