@@ -253,7 +253,7 @@ function google(wordsWithSpaces) {
   return result;
 }
 console.log(google("Zulfah  "));
-*/
+
 
 // q25
 function reverseCapitalize(inputString) {
@@ -263,3 +263,14 @@ function reverseCapitalize(inputString) {
   return thirdStep;
 }
 console.log(reverseCapitalize("input"));
+*/
+
+// q26
+function isValidNumber(checkInput) {
+  if (typeof checkInput === "number") {
+    return `${checkInput} is a valid number`;
+  } else {
+    return `${checkInput} is not a number`;
+  }
+}
+console.log(isValidNumber("21f"));
