@@ -292,7 +292,7 @@ function truncateString(chopString, noOfXters) {
   return result;
 }
 console.log(truncateString("Ali Akerele", 2));
-*/
+
 
 // q29
 function repeat_string(repeater, noOfTimes) {
@@ -300,3 +300,27 @@ function repeat_string(repeater, noOfTimes) {
   return stringRepeats;
 }
 console.log(repeat_string("Vote wisely", 2));
+*/
+
+// q30
+// function threeFive(theNumber) {
+//   if (theNumber % 3 === 0) {
+//     return "Hello";
+//   } else if (theNumber % 5 === 0) {
+//     return "World";
+//   } else if (theNumber % 3 === 0 && theNumber % 5 === 0) {
+//     return "Hello World";
+//   }
+// }
+// console.log(threeFive(15));
+
+function threeFive(theNumber) {
+  if (theNumber % 3 === 0 && theNumber % 5 === 0) {
+    return "Hello World";
+  } else if (theNumber % 5 === 0) {
+    return "World";
+  } else if (theNumber % 3 === 0) {
+    return "Hello";
+  }
+}
+console.log(threeFive(30));
