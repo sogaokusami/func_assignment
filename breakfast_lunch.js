@@ -245,7 +245,7 @@ function createID(firstName, lastName) {
   return result;
 }
 console.log(createID("mary", "smith"));
-*/
+
 
 // q24
 function google(wordsWithSpaces) {
@@ -253,3 +253,13 @@ function google(wordsWithSpaces) {
   return result;
 }
 console.log(google("Zulfah  "));
+*/
+
+// q25
+function reverseCapitalize(inputString) {
+  let firstStep = inputString.split("");
+  let secondStep = firstStep.reverse();
+  let thirdStep = secondStep.join("").toUpperCase();
+  return thirdStep;
+}
+console.log(reverseCapitalize("input"));
