@@ -178,16 +178,14 @@ function wumbo(flipMode) {
 console.log(wumbo("WUMBOLOGY"));
 
 
-// q17**
-function flipMe(reverseMe) {
-  let xterCount = reverseMe.length;
-  let firstPosition = reverseMe.slice(xterCount - 1);
-  if (firstPosition - 1 > 0) {
-    let secondPosition = reverseMe.slice(xterCount - 2);
-  }
-  console.log(xterCount, firstPosition, secondPosition);
+// q17
+function reverse(reverseMe) {
+  let reverse1stStep = reverseMe.split("");
+  let reverse2ndStep = reverse1stStep.reverse();
+  let reverse3rdStep = reverse2ndStep.join("");
+  return reverse3rdStep;
 }
-console.log(flipMe("Hello World"));
+console.log(reverse("The quick brown fox."));
 
 
 // q18
@@ -285,7 +283,7 @@ function isEmailValid(inputEmail) {
   }
 }
 console.log(isEmailValid("zaicongmail.com"));
-*/
+
 
 // q28
 
@@ -294,3 +292,4 @@ function truncateString(chopString, noOfXters) {
   return result;
 }
 console.log(truncateString("Ali Akerele", 2));
+*/
