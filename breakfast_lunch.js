@@ -263,7 +263,7 @@ function reverseCapitalize(inputString) {
   return thirdStep;
 }
 console.log(reverseCapitalize("input"));
-*/
+
 
 // q26
 function isValidNumber(checkInput) {
@@ -274,3 +274,14 @@ function isValidNumber(checkInput) {
   }
 }
 console.log(isValidNumber("21f"));
+*/
+
+// q27
+function isEmailValid(inputEmail) {
+  if (inputEmail.includes("@")) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(isEmailValid("zaicongmail.com"));
