@@ -274,7 +274,7 @@ function isValidNumber(checkInput) {
   }
 }
 console.log(isValidNumber("21f"));
-*/
+
 
 // q27
 function isEmailValid(inputEmail) {
@@ -285,3 +285,12 @@ function isEmailValid(inputEmail) {
   }
 }
 console.log(isEmailValid("zaicongmail.com"));
+*/
+
+// q28
+
+function truncateString(chopString, noOfXters) {
+  let result = chopString.slice(0, noOfXters);
+  return result;
+}
+console.log(truncateString("Ali Akerele", 2));
