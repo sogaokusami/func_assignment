@@ -1,5 +1,5 @@
 // q1
-/*
+
 function isLeapYear(checkYear) {
   if (checkYear % 4 === 0) {
     return "True";
@@ -30,7 +30,6 @@ function discountCost(qty) {
 }
 console.log(discountCost(900));
 
-
 // q4
 function profitableGamble(prob, prize, pay) {
   if (prob * prize > pay) {
@@ -41,9 +40,9 @@ function profitableGamble(prob, prize, pay) {
 }
 console.log(profitableGamble(0.9, 3, 2));
 
-
 // q5
 function makesTen(firstInt, secondInt) {
+  // let sum = firstInt + secondInt - rosh says this is preferable
   if (firstInt + secondInt === 10 || firstInt === 10 || secondInt === 10) {
     return "true";
   } else {
@@ -51,7 +50,6 @@ function makesTen(firstInt, secondInt) {
   }
 }
 console.log(makesTen(10, 10));
-
 
 // q6
 
@@ -64,7 +62,6 @@ function comp(oneString, twoString) {
 }
 console.log(comp("fiery", "superb"));
 
-
 // q7
 
 function acceptIntoMovie(age, isSupervised) {
@@ -75,7 +72,6 @@ function acceptIntoMovie(age, isSupervised) {
   }
 }
 console.log(acceptIntoMovie(16, false));
-
 
 // q8
 function oddOrEven(anyString) {
@@ -106,7 +102,6 @@ function isLastCharacterN(randomString) {
 }
 console.log(isLastCharacterN("Learning JavaScript is golden"));
 
-
 // q10
 function isPlural(checkWord) {
   if (checkWord.slice(-1) === "s") {
@@ -116,7 +111,6 @@ function isPlural(checkWord) {
   }
 }
 console.log(isPlural("magic"));
-
 
 // q11
 function fifth(argOne, argTwo, argThree, argFour, argFive) {
@@ -128,20 +122,19 @@ function fifth(argOne, argTwo, argThree, argFour, argFive) {
 }
 console.log(fifth());
 
-
 // q12
 function journeyDistance(journeyCost) {
-  let baseCost = 3;
-  if (journeyCost > baseCost) {
-    return `You have travelled a distance of ${
-      1 + (journeyCost - baseCost) / 2
-    }km`;
+  const BASE_COST = 3;
+  let costAboveBase = journeyCost - BASE_COST;
+  let journeyOver1km = costAboveBase / 2;
+  let totalJourneyDistance = journeyOver1km + 1;
+  if (journeyCost > BASE_COST) {
+    return `You have travelled a distance of ${totalJourneyDistance}km 🚗`;
   } else {
-    return `You have travelled ${journeyCost / 3}km`;
+    return `You have travelled ${journeyCost / 3}km 🚗`;
   }
 }
 console.log(journeyDistance(5));
-
 
 // q13**
 
@@ -151,14 +144,12 @@ function days(isDay, isMonth) {
 }
 console.log(days(2, 2018));
 
-
 // q14
 function newWord(inputWord) {
   let result = inputWord.slice(1);
   return result;
 }
 console.log(newWord("cherry"));
-
 
 // q15
 function firstLast(slicedString) {
@@ -169,14 +160,13 @@ function firstLast(slicedString) {
 }
 console.log(firstLast("Adeyemi"));
 
-
 // q16
 function wumbo(flipMode) {
+  // replaceAll is another option
   let result = flipMode.replace(/M/gi, "W");
   return result;
 }
 console.log(wumbo("WUMBOLOGY"));
-
 
 // q17
 function reverse(reverseMe) {
@@ -186,7 +176,6 @@ function reverse(reverseMe) {
   return reverse3rdStep;
 }
 console.log(reverse("The quick brown fox."));
-
 
 // q18
 function checkEnding(stringA, stringB) {
@@ -200,16 +189,16 @@ function checkEnding(stringA, stringB) {
 }
 console.log(checkEnding("feminine", "nine"));
 
-
 // q19
 function getMiddle(middleString) {
   let center = Math.floor(middleString.length / 2);
   if (middleString.length % 2 === 1) {
     return middleString.slice(center, center + 1);
+  } else {
+    return middleString.slice(center - 1, center + 1);
   }
 }
 console.log(getMiddle("testing"));
-
 
 // q21
 
@@ -222,7 +211,6 @@ function moodToday(myMood) {
 }
 console.log(moodToday("annoyed"));
 
-
 // q22
 function match(senseStringA, senseStringB) {
   if (senseStringA.toLowerCase() === senseStringB.toLowerCase()) {
@@ -232,7 +220,6 @@ function match(senseStringA, senseStringB) {
   }
 }
 console.log(match("mask", "mAskinG"));
-
 
 // q23
 function createID(firstName, lastName) {
@@ -244,14 +231,12 @@ function createID(firstName, lastName) {
 }
 console.log(createID("mary", "smith"));
 
-
 // q24
 function google(wordsWithSpaces) {
   let result = wordsWithSpaces.replace(/\s/g, "+");
   return result;
 }
 console.log(google("Zulfah  "));
-
 
 // q25
 function reverseCapitalize(inputString) {
@@ -261,7 +246,6 @@ function reverseCapitalize(inputString) {
   return thirdStep;
 }
 console.log(reverseCapitalize("input"));
-
 
 // q26
 function isValidNumber(checkInput) {
@@ -273,7 +257,6 @@ function isValidNumber(checkInput) {
 }
 console.log(isValidNumber("21f"));
 
-
 // q27
 function isEmailValid(inputEmail) {
   if (inputEmail.includes("@")) {
@@ -284,7 +267,6 @@ function isEmailValid(inputEmail) {
 }
 console.log(isEmailValid("zaicongmail.com"));
 
-
 // q28
 
 function truncateString(chopString, noOfXters) {
@@ -293,14 +275,12 @@ function truncateString(chopString, noOfXters) {
 }
 console.log(truncateString("Ali Akerele", 2));
 
-
 // q29
 function repeat_string(repeater, noOfTimes) {
   let stringRepeats = `${repeater} `.repeat(noOfTimes);
   return stringRepeats;
 }
 console.log(repeat_string("Vote wisely", 2));
-*/
 
 // q30
 // function threeFive(theNumber) {
@@ -323,4 +303,4 @@ function threeFive(theNumber) {
     return "Hello";
   }
 }
-console.log(threeFive(30));
+console.log(threeFive(9));
