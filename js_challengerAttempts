@@ -162,3 +162,18 @@ function myFunction(a) {
 }
 
 console.log(myFunction([10, 100, 1000]));
+
+// Return the longest string from an array of strings
+// Write a function that takes an array of strings as argument. Return the longest string.
+function myFunction(a) {
+  let newArray = [];
+  a.map(function (num) {
+    newArray.push(num.length);
+  }); /*I want to determine the length of each string in the array */
+  newArray.sort(function (a, b) {
+    /* Here I am sorting the string length in descending order */ return b - a;
+  });
+  return newArray; /* This returns the string length in descending order. I need to figure out how to return the array with the longest length */
+}
+
+console.log(myFunction(["I", "need", "candy"]));
