@@ -30,3 +30,9 @@ function myFunction(a) {
   return a.slice(-3);
 }
 console.log(myFunction([1, 2, 3, 4]));
+
+// Get first n elements of an array
+function myFunction(a) {
+  return a.slice(0, 3);
+}
+console.log(myFunction([1, 2, 3, 4]));
