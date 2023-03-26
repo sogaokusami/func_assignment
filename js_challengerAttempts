@@ -56,3 +56,10 @@ function myFunction(a) {
   return counter;
 }
 console.log(myFunction([-1, 2, 3, -4, 5, -6, 7, -8, 9, 2, -4]));
+
+// Sort an array of strings alphabetically
+// Write a function that takes an array of strings as argument. Sort the array elements alphabetically. Return the result.
+function myFunction(a) {
+  return a.sort();
+}
+console.log(myFunction(["z", "c", "d", "a", "y", "a", "w"]));
