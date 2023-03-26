@@ -16,6 +16,11 @@ console.log(myFunction([false, "2", 1], false));
 
 // Write a function that takes an array (a) and a value (n) as argument. Return the nth element of 'a'
 function myFunction(a, n) {
-    return a[n - 1];
+  return a[n - 1];
+}
 
-    
+// Remove first n elements of an array
+function myFunction(a) {
+  return a.slice(3);
+}
+console.log(myFunction([1, 2, 3, 4]));
